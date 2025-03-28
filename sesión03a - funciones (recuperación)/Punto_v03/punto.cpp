@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "punto.hpp"
 
 using namespace std;
@@ -55,7 +56,22 @@ TPunto operator+(const TPunto &p1, const TPunto &p2) {
     return p3;
 }
 
+/*
+queremos usar el código así:
+TPunto punto;
+arch>>punto;
 
+¿donde se usará? En Conjunto, se invocará en un bucle.
+ */
+
+ifstream & operator>>(ifstream & arch, TPunto &p) {
+    arch >> p.x;
+    if (arch.eof())
+        return arch;
+    arch.get(); //para sacar la coma
+    arch >> p.y;
+    return arch;
+}
 
 
 

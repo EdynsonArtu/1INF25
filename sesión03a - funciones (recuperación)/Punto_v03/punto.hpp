@@ -1,6 +1,7 @@
 #ifndef PUNTO_HPP
 #define PUNTO_HPP
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -28,6 +29,8 @@ ostream & operator<<(ostream &os, const TPunto &p);
 bool operator==(const TPunto &p1, const TPunto &p2);
 
 TPunto operator+(const TPunto &p1, const TPunto &p2);
+
+ifstream & operator>>(ifstream & arch, TPunto &p);
 
 #endif /* PUNTO_HPP */
 
