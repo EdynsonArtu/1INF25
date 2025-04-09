@@ -12,5 +12,7 @@ ostream & operator<<(ostream &out, const Cliente &cliente);
 
 bool operator<<(Cliente &cliente, const LibroSolicitado &libroSolicitado);
 
+void operator++(Cliente &cliente);
+
 #endif /* CLIENTE_HPP */
 
