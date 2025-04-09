@@ -6,5 +6,7 @@
 
 using namespace std;
 
+bool operator>>(LibroSolicitado &libroSolicitado, Libro arregloLibro[]);
+
 #endif /* LIBRO_SOLICITADO_HPP */
 

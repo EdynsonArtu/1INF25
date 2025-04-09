@@ -9,15 +9,15 @@
 #ifndef ESTRUCTURAS_H
 #define ESTRUCTURAS_H
 
-struct LibroSolicitado{
+struct LibroSolicitado {
     int numeroDePedido;
     char codigoDelLibro[8];
-	double precio;
+    double precio;
     bool atendido; // true ==> Pedido atendido
-                   // false ==> Pedido no atendido
+    // false ==> Pedido no atendido
 };
 
-struct Cliente{
+struct Cliente {
     int dni;
     char nombre[60];
     struct LibroSolicitado librosSolicitados[30];
@@ -25,7 +25,7 @@ struct Cliente{
     double pagoTotal;
 };
 
-struct Libro{
+struct Libro {
     char codigo[8];
     char titulo[80];
     char autor[60];

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <cstring>
 #include "Estructuras.h"
 #include "libro.hpp"
 
@@ -28,4 +29,17 @@ ostream & operator<<(ostream &out, const Libro &libro) {
     out << right << setw(10) << libro.stock;
     out << right << setw(10) << setprecision(2) << fixed << libro.precio;
     return out;
+}
+
+//implementación mediante búsqueda secuencial
+int buscar_libro(char *codigo, Libro arregloLibro[]){
+    int i=0;
+    while (true){
+        Libro libro = arregloLibro[i];
+        if (strcmp(libro.codigo, "FIN")==0)
+            return LIBRO_NO_ENCONTRADO;
+        else if (strcmp(libro.codigo, codigo)==0)
+            return i;
+        i++;
+    }
 }
