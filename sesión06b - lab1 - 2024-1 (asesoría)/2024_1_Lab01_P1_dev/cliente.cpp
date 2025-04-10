@@ -19,9 +19,28 @@ bool operator>>(ifstream &archivo, Cliente &cliente) {
 }
 
 ostream & operator<<(ostream &out, const Cliente &cliente) {
-    out << cliente.dni;
-    out << " ";
-    out << cliente.nombre;
+    out<<cliente.dni;
+    out<<" ";
+    out<<cliente.nombre<<endl;
+    out<<"Libros entregados:"<<endl;
+    out<<'\t'<<setw(10)<<left<<"Pedido No"<<setw(10)<<left<<"Código"<<setw(10)<<"Precio"<<endl;
+    for (int i=0; i<cliente.cantDeLibros; i++)
+        if (cliente.librosSolicitados[i].atendido){
+            out<<'\t'<<setprecision(2)<<fixed;
+            out<<setw(10)<<left<<cliente.librosSolicitados[i].numeroDePedido;
+            out<<setw(10)<<left<<cliente.librosSolicitados[i].codigoDelLibro;
+            out<<setw(10)<<cliente.librosSolicitados[i].precio<<endl;
+        }
+    out<<"Total a pagar: "<<cliente.pagoTotal<<endl;
+    out<<"Libros no entregados por falta de stock:"<<endl;
+    out<<'\t'<<setw(10)<<left<<"Pedido No"<<setw(10)<<left<<"Código"<<endl;
+    for (int i=0; i<cliente.cantDeLibros; i++)
+        if (not cliente.librosSolicitados[i].atendido){
+            out<<'\t'<<setprecision(2)<<fixed;
+            out<<setw(10)<<left<<cliente.librosSolicitados[i].numeroDePedido;
+            out<<setw(10)<<left<<cliente.librosSolicitados[i].codigoDelLibro<<endl;
+        }
+    return out;
 }
 
 bool operator<<(Cliente &cliente, const LibroSolicitado &libroSolicitado) {
