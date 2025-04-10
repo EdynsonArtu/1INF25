@@ -26,7 +26,7 @@ void imprimir_reporte_libros_y_clientes(Cliente arregloCliente[60]) {
     while (true) {
         Cliente cliente = arregloCliente[i];
         i++;
-        if (strcmp(cliente.nombre, "FIN"))
+        if (strcmp(cliente.nombre, "FIN") == 0)
             break;
         cout << cliente << endl;
     }
