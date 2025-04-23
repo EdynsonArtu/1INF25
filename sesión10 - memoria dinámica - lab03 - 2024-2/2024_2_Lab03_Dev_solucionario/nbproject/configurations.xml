@@ -9,6 +9,9 @@
       <itemPath>ConjuntoDePedidos.hpp</itemPath>
       <itemPath>ConjuntoDePlatos.hpp</itemPath>
       <itemPath>ConjuntoDeRepartidores.hpp</itemPath>
+      <itemPath>MemoriaPorIncrementoClientes.hpp</itemPath>
+      <itemPath>MemoriaPorIncrementoRepartidores.hpp</itemPath>
+      <itemPath>MemoriaPorIncrementoSubTotales.hpp</itemPath>
       <itemPath>MemoriaPorIncrementos.hpp</itemPath>
       <itemPath>Pedido.hpp</itemPath>
       <itemPath>Plato.hpp</itemPath>
@@ -25,6 +28,9 @@
       <itemPath>ConjuntoDePedidos.cpp</itemPath>
       <itemPath>ConjuntoDePlatos.cpp</itemPath>
       <itemPath>ConjuntoDeRepartidores.cpp</itemPath>
+      <itemPath>MemoriaPorIncrementoClientes.cpp</itemPath>
+      <itemPath>MemoriaPorIncrementoRepartidores.cpp</itemPath>
+      <itemPath>MemoriaPorIncrementoSubTotales.cpp</itemPath>
       <itemPath>MemoriaPorIncrementos.cpp</itemPath>
       <itemPath>Pedido.cpp</itemPath>
       <itemPath>Plato.cpp</itemPath>
@@ -81,6 +87,24 @@
       <item path="ConjuntoDeRepartidores.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ConjuntoDeRepartidores.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoClientes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoClientes.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoRepartidores.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoRepartidores.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoSubTotales.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoSubTotales.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MemoriaPorIncrementos.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -139,6 +163,24 @@
       <item path="ConjuntoDeRepartidores.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ConjuntoDeRepartidores.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoClientes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoClientes.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoRepartidores.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoRepartidores.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoSubTotales.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MemoriaPorIncrementoSubTotales.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MemoriaPorIncrementos.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -39,6 +39,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/ConjuntoDePedidos.o \
 	${OBJECTDIR}/ConjuntoDePlatos.o \
 	${OBJECTDIR}/ConjuntoDeRepartidores.o \
+	${OBJECTDIR}/MemoriaPorIncrementoClientes.o \
+	${OBJECTDIR}/MemoriaPorIncrementoRepartidores.o \
+	${OBJECTDIR}/MemoriaPorIncrementoSubTotales.o \
 	${OBJECTDIR}/MemoriaPorIncrementos.o \
 	${OBJECTDIR}/Pedido.o \
 	${OBJECTDIR}/Plato.o \
@@ -89,6 +92,21 @@ ${OBJECTDIR}/ConjuntoDeRepartidores.o: ConjuntoDeRepartidores.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ConjuntoDeRepartidores.o ConjuntoDeRepartidores.cpp
+
+${OBJECTDIR}/MemoriaPorIncrementoClientes.o: MemoriaPorIncrementoClientes.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MemoriaPorIncrementoClientes.o MemoriaPorIncrementoClientes.cpp
+
+${OBJECTDIR}/MemoriaPorIncrementoRepartidores.o: MemoriaPorIncrementoRepartidores.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MemoriaPorIncrementoRepartidores.o MemoriaPorIncrementoRepartidores.cpp
+
+${OBJECTDIR}/MemoriaPorIncrementoSubTotales.o: MemoriaPorIncrementoSubTotales.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MemoriaPorIncrementoSubTotales.o MemoriaPorIncrementoSubTotales.cpp
 
 ${OBJECTDIR}/MemoriaPorIncrementos.o: MemoriaPorIncrementos.cpp
 	${MKDIR} -p ${OBJECTDIR}
